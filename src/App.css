@@ -1,0 +1,93 @@
+export 
+/* Basic styling for the container */
+.container {
+  /* margin: 50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  /* gap: 20px; */
+}
+
+/* Employee and Team List Styling */
+.employee-list, .team-list {
+  width: 400px;
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Titles for the sections */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Employee and Team item styling */
+.employee-item, .team-list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Disabled employee item styling */
+.employee-item.disabled {
+  color: grey;
+  pointer-events: none; /* Disable click */
+  background-color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Disable the add button for already added employees */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Aligning the two lists side by side */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Team list styling */
+.team-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-list ul li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sorting button */
+.team-list button {
+  margin-bottom: 10px;
+}
+
+/* Center the average age text */
+.team-list p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
